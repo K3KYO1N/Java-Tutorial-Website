@@ -1,0 +1,46 @@
+﻿.navigationBar {
+    width: 100%;
+    display: block;
+    border: 10px outset gray;
+    background-color: lightgray;
+}
+
+.button {
+    display: inline-block;
+    border: 8px outset #ffffff00;
+    font-size: 30px;
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.text {
+    font-size: 20px;
+    font-family: Arial;
+    color: lightcyan;
+}
+
+.title {
+    font-size: 50px;
+    font-family: Arial;
+    color: lightcyan;
+}
+
+.subtitle {
+    font-size: 35px;
+    font-family: Arial;
+    color: lightcyan;
+}
+
+.code {
+    font-size: 15px;
+    font-family: Consolas;
+    color: white;
+}
+
+.background {
+    width: 600px;
+    display: block;
+    border: 10px outset darkgray;
+    background-color: black;
+}
+

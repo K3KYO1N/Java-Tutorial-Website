@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Custom Comparator</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <style>
+        a:link {
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color:darkslategray;">
+    <div class="navigationBar">
+        <div class="button">
+            <a href="./HTMLPage1.html">Home Page</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage2.html">Basics</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage3.html">Recursion</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage4.html">Custom Comparator</a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="title">
+        Custom Comparator
+        <img src="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png" width="50" height="50">
+    </div>
+    <hr>
+
+    <br>
+    <div class="subtitle">
+        Comparing Strings
+    </div>
+    <br>
+    <br>
+    <div class="background">
+        <div class="code">
+            import java.util.*;
+            <br><br>
+            public class Main{
+            <p style="margin-left: 40px">public static void main(String[] args) {</p>
+            <p style="margin-left: 80px">
+                Scanner sc = new Scanner(System.in);<br>
+                int n = Integer.parseInt(sc.nextLine());<br>
+                String s[] = new String[n];<br>
+                for(int i =0;i< n;i++) s[i]=sc.nextLine();<br>Arrays.sort(s, new com());<br>for(int i =0;i < n;i++) { <br>System.out.print(s[i]);<br>}
+            </p>
+            <p style="margin-left: 40px">}<br>static class com implements Comparator&lt;String&gt;{</p>
+            <p style="margin-left: 80px">
+                public int compare(String a, String b) {<br>
+                String ab = a+b, ba = b+a;<br>
+                return ab.compareTo(ba);<br>
+                }
+            </p>
+            <p style="margin-left: 40px">}</p>
+            }
+        </div>
+    </div>
+    <br>
+    <div class="text">
+        The above code takes in an integer n, then takes in n strings. The output will be a combination of the inputted string sorted from lowest to greatest in alphabetical order. The "com" function is a custom sort algorithm for strings.
+        It takes in 2 strings, and compares them by creating two combinations of the strings(one with string a followed by string b, another with string b followed by string a). The above code utilizes java's Arrays.sort() function,
+        implementing the custom sort fucntion, to sort an array of strings. For example, if the input is: 4 ac aa ad ab. The output would be aaabacad. Note: this algorithm can also sort numbers because it takes the string value of inputted numbers.
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>recursion</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <style>
+        a:link {
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color:darkslategray;">
+    <div class="navigationBar">
+        <div class="button">
+            <a href="./HTMLPage1.html">Home Page</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage2.html">Basics</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage3.html">Recursion</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage4.html">Custom Comparator</a>
+        </div>
+    </div>
+
+    <br>
+
+    <hr>
+    <div class="title">
+        Recursion Algorithm
+        <img src="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png" width="50" height="50">
+    </div>
+    <hr>
+
+    <br>
+    <div class="subtitle">
+        What is recursion?
+    </div>
+    <br>
+
+    <div class="text">
+        Recursion is an algorithm that calls on itself. It is useful for solving problems that can be solved by repeating a process that involves itself.
+    </div>
+    <br>
+
+    <div class="background">
+        <div class="code">
+            import java.util.*;
+            <br><br>
+            public class Main{
+            <p style="margin-left: 40px">public static void main(String[] args) {</p>
+            <p style="margin-left: 80px">System.out.println(fac(5));</p>
+            <p style="margin-left: 40px">}<br>static int fac(int i) {</p>
+            <p style="margin-left: 80px">if(i==1) return 1;<br>else return i * fac(i-1);</p>
+            <p style="margin-left: 40px">}</p>
+            }
+        </div>
+    </div>
+    <br>
+    <div class="text">
+        In the above example, the algorithm will print out the value of 5 factorial. The user defined "fac" method takes in a integer, and returns the factorial of the interger. 
+        The factorial of a number is equal to the number multiplied by the factorial of the number subtract one. Therefore, this method takes a number i, and multiplies it by
+        the factorial of i-1 by calling on itself. A important thing about recursion is that it must have a base case, otherwise it will go into an infinite loop.
+        The base case in the above example is that if i is 1, it will return 1, because 1 factorial is still 1.
+    </div>
+    <br>
+    <br>
+    <div class="subtitle">
+        Application of recursion | Greatest Common Divisor
+    </div>
+    <br>
+    <br>
+    <div class="background">
+        <div class="code">
+            import java.util.*;
+            <br><br>
+            public class Main{
+            <p style="margin-left: 40px">public static void main(String[] args) {</p>
+            <p style="margin-left: 80px">System.out.println(GCD(30, 18));</p>
+            <p style="margin-left: 40px">}<br>static int GCD(int m, int n) {</p>
+            <p style="margin-left: 80px">if(n == 0) return m;<br>int rem = m%n;<br>m = n; n = rem;<br>return GCD(m, n);</p>
+            <p style="margin-left: 40px">}</p>
+            }
+        </div>
+    </div>
+    <br>
+    <div class="text">
+        The above example uses recursion as an application of the euclidean algorithm. The algorithm is used to find the greatest common divisor between two integers. The base case is that if the second integer is 0, it would return the first integer.
+        Otherwise, the first integer will become the value of the second integer, and the second integer will become the value of the first integer(before it became the value of the second integer)
+        modulo the second integer. The function will then call on itself until it hits the base case. Since the above example is using the numbers 30 and 18, it will produce the output of 6.
+    </div>
+
+</body>
+</html>

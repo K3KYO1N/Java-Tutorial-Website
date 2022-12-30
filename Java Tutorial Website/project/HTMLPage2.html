@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>basics</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+    <style>
+        a:link {
+            text-decoration: none !important;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body style="background-color:darkslategray;">
+    <div class="navigationBar">
+        <div class="button">
+            <a href="./HTMLPage1.html">Home Page</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage2.html">Basics</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage3.html">Recursion</a>
+        </div>
+        <div class="button">
+            <a href="./HTMLPage4.html">Custom Comparator</a>
+        </div>
+    </div>
+
+    <br>
+
+    <hr>
+    <div class="title">
+        Basics of Java
+        <img src="https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png" width="50" height="50">
+    </div>
+    <hr>
+
+    <br>
+    <div class="subtitle">
+        Variables in Java
+    </div>
+    <br>
+
+    <div class="text">
+        Variables are used to store data. There are different types of variables.
+        <ul>
+            <li>String  : stores text.</li>
+            <br>
+            <li>int     : stores integers.</li>
+            <br>
+            <li>float   : stores decimals(can store 32 bits).</li>
+            <br>
+            <li>double  : stores decimals(can store 64 bits).</li>
+            <br>
+            <li>char    : stores a singular character.</li>
+            <br>
+            <li>boolean : stores either true or false.</li>
+        </ul>
+    </div>
+    <br>
+
+    <br>
+    <div class="subtitle">
+        Input and Output
+    </div>
+    <br>
+    <div class="text">
+        To read user input in java, you would need to import the scanner class and create a scanner object. You will then be able to read input using your scanner.
+    </div>
+    <br>
+    <div class="background">
+        <div class="code">
+            import java.util.Scanner;
+            <br><br>
+            public class Main{
+            <p style="margin-left: 40px">public static void main(String[] args) {</p>
+            <p style="margin-left: 80px">Scanner sc = new Scanner(System.in);<br>String temp = sc.nextLine();</p>
+            <p style="margin-left: 40px">}</p>
+            }
+        </div>
+    </div>
+    <div class="text">
+        In the above example, the value of temp will be your input.
+        <br>
+        <br>
+        To output something in java, you can use the print method.
+    </div>
+    <br>
+    <div class="background">
+        <div class="code">
+            import java.util.Scanner;
+            <br><br>
+            public class Main{
+            <p style="margin-left: 40px">public static void main(String[] args) {</p>
+            <p style="margin-left: 80px">Scanner sc = new Scanner(System.in);<br>String temp = sc.nextLine();<br>System.out.println(temp);</p>
+            <p style="margin-left: 40px">}</p>
+            }
+        </div>
+    </div>
+    <div class="text">
+        In the above example, the value of temp will be your output.
+        <br>
+    </div>
+    <br>
+    <br>
+    <div class="subtitle">
+        For loops
+    </div>
+    <br>
+    <div class="text">
+        For loops are used to repeat a line of code.
+    </div>
+    <br>
+    <div class="background">
+        <div class="code">
+            import java.util.Scanner;
+            <br><br>
+            public class Main{
+            <p style="margin-left: 40px">public static void main(String[] args) {</p>
+            <p style="margin-left: 80px">int temp = 1;</p>
+            <p style="margin-left: 80px">for(int i=0; i<5; i++) temp++;<br>System.out.println(temp);</p>
+            <p style="margin-left: 40px">}</p>
+            }
+        </div>
+    </div>
+    <br>
+    <div class="text">
+        In the above example, temp has an initial value of 1. The int i represents the index of the for loop. It will start from i = 0, and loop until i = 4,<br> looping a total of 5 times. Each line, the value of temp is increased by 1. Therefore, the output value of temp will be 6.
+        <br>
+    </div>
+    <br>
+    
+
+
+</body>
+</html>
